@@ -1,0 +1,53 @@
+{
+  "name": "banks-ng",
+  "version": "1.0.0",
+  "description": "A collection of nigerian bank information",
+  "main": "bin/index.js",
+  "author": "Timi Aiyemo <cozzbie@gmail.com>",
+  "license": "MIT",
+  "types": "bin/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json && rsync -va bin/src/* bin/ && rsync -va logos/* bin/logos/ && rm -rf bin/src",
+    "publish": "npm publish",
+    "npm:list": "npm pack --dry-run",
+    "npm:publish": "npm publish --access=public",
+    "dry:publish": "npm publish --dry-run",
+    "test": "mocha",
+    "test:watch": "yarn test --watch",
+    "lint": "eslint ./src --no-cache",
+    "lint:fix": "yarn lint -- --fix"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "4.4.1",
+    "@types/mocha": "10.0.10",
+    "@types/node": "24.0.3",
+    "@typescript-eslint/eslint-plugin": "8.34.1",
+    "@typescript-eslint/parser": "8.34.1",
+    "eslint": "9.29.0",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-unused-imports": "4.1.4",
+    "expect": "30.0.2",
+    "mocha": "11.7.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cozzbie/banks-ng.git"
+  },
+  "keywords": [
+    "node.js",
+    "npm",
+    "package",
+    "banks",
+    "nigeria"
+  ],
+  "bugs": {
+    "url": "https://github.com/cozzbie/banks-ng/issues"
+  },
+  "homepage": "https://github.com/cozzbie/banks-ng#readme",
+  "bin": {
+    "banks-ng": "bin/index.js"
+  }
+}
