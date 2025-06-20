@@ -8,7 +8,7 @@ export interface Bank {
 }
 
 const { npm_package_version: version } = process.env;
-const baseUrl = `https://cdn.jsdelivr.net/npm/banks-ng@${version}/dist/`;
+const baseUrl = `https://cdn.jsdelivr.net/npm/banks-ng@${version}/bin/logos`;
 
 export const banks: Bank[] = [
     {
