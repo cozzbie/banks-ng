@@ -20,7 +20,7 @@ export const banks: Bank[] = [
     address: 'No 23 Karimu Kotun Street Victoria Island, Lagos, Nigeria',
   },
   {
-    name: 'ABOVE ONLY MFB',
+    name: 'Above Only MFB',
     slug: 'AOM',
     code: '51204',
     ussd: '*540*283*0#',
