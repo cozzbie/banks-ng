@@ -19,6 +19,7 @@ const result = getBanks();
 //  {
 //   id: 0,
 //   name: 'Access Bank',
+//   logo: 'https://cdn.jsdelivr.net/npm/banks-ng@<version>/dist/access-bank.png',
 //  },
 // ...
 // ]
