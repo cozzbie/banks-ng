@@ -1,6 +1,6 @@
 {
   "name": "banks-ng",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A collection of nigerian bank information",
   "main": "bin/index.js",
   "author": "Timi Aiyemo <cozzbie@gmail.com>",
@@ -32,6 +32,9 @@
     "ts-node": "10.9.2",
     "typescript": "5.8.3"
   },
+  "files": [
+    "bin"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cozzbie/banks-ng.git"
