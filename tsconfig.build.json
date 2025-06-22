@@ -2,8 +2,12 @@
     "extends": "./tsconfig.base.json",
     "compilerOptions": {
         "outDir": "./bin",
-        "declaration": true
+        "declaration": false
     },
+    "include": [
+        "./src/**/*",
+        "./logos/**/*"
+    ],
     "exclude": [
         "**/*.ispec.ts",
         "**/*.uspec.ts",

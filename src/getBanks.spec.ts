@@ -8,11 +8,13 @@ describe('Get Banks', () => {
         expect(list).toEqual(expect.arrayContaining([
             expect.objectContaining({
                 id: 0,
-                name: 'Abbey Mortgage Bank'
+                name: 'Abbey Mortgage Bank',
+                logo: expect.any(String)
             }),
             expect.objectContaining({
                 id: 1,
-                name: 'Above Only MFB'
+                name: 'Above Only MFB',
+                logo: expect.any(String)
             })
         ]));
     });
