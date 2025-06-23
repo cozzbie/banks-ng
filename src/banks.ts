@@ -1,5 +1,3 @@
-import { readFileSync } from 'fs';
-
 export interface Bank {
     name: string;
     slug: string;
@@ -9,8 +7,7 @@ export interface Bank {
     address: string;
 }
 
-const packageJson = readFileSync('./package.json').toString('utf-8');
-const version = JSON.parse(packageJson).version;
+const { version } = require('../package.json');
 const baseUrl = `https://cdn.jsdelivr.net/npm/banks-ng@${version}/bin/logos`;
 
 export const banks: Bank[] = [

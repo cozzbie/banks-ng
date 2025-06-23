@@ -1,6 +1,6 @@
 {
   "name": "banks-ng",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A collection of nigerian bank information",
   "main": "bin/index.js",
   "author": "Timi Aiyemo <cozzbie@gmail.com>",
