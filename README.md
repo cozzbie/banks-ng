@@ -19,7 +19,7 @@ const result = getBanks();
 //  {
 //   id: 0,
 //   name: 'Access Bank',
-//   logo: 'https://cdn.jsdelivr.net/npm/banks-ng@<version>/dist/access-bank.png',
+//   logo: 'https://cdn.jsdelivr.net/npm/banks-ng@<version>/bin/access-bank.png',
 //  },
 // ...
 // ]
@@ -32,9 +32,21 @@ const result = getBank(index);
 //   slug: 'access-bank',
 //   code: '801',
 //   ussd: '*901#'
-//   logo: 'https://cdn.jsdelivr.net/npm/banks-ng@<version>/dist/access-bank.png',
+//   logo: 'https://cdn.jsdelivr.net/npm/banks-ng@<version>/bin/access-bank.png',
 //   address: '999c, Danmole Street, Off Idejo Street, Off Adeola Odeku Street, Victoria Island, Lagos',
 //  }
+
+
+// You can also search by some partial match using a field
+const result = getBanksBy({ name: 'Abbey' });
+
+//[
+//  {
+//   name: 'Abbey Mortgage Bank',
+//   logo: 'https://cdn.jsdelivr.net/npm/banks-ng@<version>/bin/abbey-mortgage-bank.png',
+//  },
+// ...
+// ]
 ```
 
 ### Report Bugs
